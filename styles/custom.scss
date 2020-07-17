@@ -1,0 +1,97 @@
+@import './variables';
+@import './navigation';
+@import './landing';
+@import './about';
+@import './services';
+@import './works';
+@import './team';
+@import './contact';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: $color2;
+   // position: relative;
+   -webkit-touch-callout: none;  
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
+
+.section-header{
+    width: 100%;
+    height: 6rem;
+    margin: 0 auto;
+    background-color: $color1;
+    @include flexCenter(column);
+    border-bottom-right-radius: 230px;
+    box-shadow: 2px 2px 20px #111;
+    color: $color-light;
+    position: relative;
+    z-index: 1000;
+    
+}
+
+
+#goTopBtn{
+    width: 50%;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin:  auto;
+    border: 1px solid $color3;
+    border-radius: 14px;
+    color: $color-light;
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
+    @include flexCenter(row);
+    transition: 300ms;
+
+    .fa-arrow-circle-up{
+        color: $color3;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        transition: 300ms;
+    }
+
+}
+
+
+
+@media (min-width: 1024px){
+    #goTopBtn{
+        width: 30%;
+        left: 35%;
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 10px $color3;
+            background: $color3;
+        }
+
+        &:hover .fa-arrow-circle-up{
+            color: $color-light;
+        }
+    }
+}
+
+

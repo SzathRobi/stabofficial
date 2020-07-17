@@ -1,0 +1,76 @@
+@import './variables';
+
+main{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+    
+}
+
+#landingCarousel{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    top: 10vh;
+
+    img{
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        filter: brightness(80%) contrast(110%);
+    }
+
+    .carousel-brick{
+        display: none;
+    }
+}
+
+.landing-title{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    background: rgba($color: #000000, $alpha: 0.3);
+    z-index: 2;
+    @include flexCenter(column);
+
+    h1, h4{
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: -10%;
+    }
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h4{
+        font-size: 2rem;
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px){
+    .carousel-brick{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .carousel-brick{
+        display: block;
+    }
+
+    .landing-title{
+        h1{
+            font-size: 6rem;
+        }
+        h4{
+            font-size: 2.5rem;
+        }
+    }
+}

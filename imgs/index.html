@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stabofficial.hu</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6d59e6f2e7.js" crossorigin="Sz@trobi"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+<body>
+    
+    <main id="main">
+        <div class="nav" id="nav">
+          <a href="#main">
+            <img id="logo" src="./imgs/logo.jpg" alt="stabOfficial logo">
+          </a>
+            <div class="menu-container">
+                <h3 class="menu-text">Menu</h3>
+                <div class="burger" id="burgerBtn">
+                    <div class="burger-line" id="burgerTop"></div>
+                    <div class="burger-line" id="burgerMiddle"></div>
+                    <div class="burger-line" id="burgerBottom"></div>
+                </div>
+            </div>
+            <div class="navItem-container" id="navItemContainer">
+                <a href="#main" class="nav-item" id="home"><span>Főoldal</span></a>
+                <a href="#aboutSection" class="nav-item" id="about"><span>Rólunk</span></a>
+                <a href="#serviceSection" class="nav-item" id="services"><span>Szolgáltások</span></a>
+                <a href="#teamSection" class="nav-item" id="team"><span>Csapat</span></a>
+                <a href="#contactSection" class="nav-item" id="contact"><span>Elérhetőség</span></a>
+            </div>      
+        </div>
+
+        <div id="landingCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#landingCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#landingCarousel" data-slide-to="1"></li>
+              <li data-target="#landingCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./imgs/people.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/people.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./imgs/people.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+
+          <div class="landing-title" id="landingTitle">
+            <h1 id="landingTitleText"></h1>
+            <h4 id="landingSubTitleText"></h4>
+          </div>
+    </main>
+
+
+
+    <section class="about" id="aboutSection">
+      <div class="section-header">
+        <h1>Rólunk</h1>
+        <h4>Mit is Csinálunk</h4>
+      </div>
+      <div class="about-grid">
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-audio-description about-icon"></i>
+          <h3>Reklámfilm</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-music about-icon"></i>
+          <h3>Zenei videoklip</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-glass-cheers about-icon"></i>
+          <h3>Rendezvény bemutató videó</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-building about-icon"></i>
+          <h3>Cégbemutató film</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-user about-icon"></i>
+          <h3>Egyéni videó</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-image about-icon"></i>
+          <h3>Termék fotó</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-film about-icon"></i>
+          <h3>Dokumentum film</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-portrait about-icon"></i>
+          <h3>Portré fotó</h3>
+        </div>
+        <div class="grid-item" data-aos="zoom-in-up">
+          <i class="fas fa-microphone about-icon"></i>
+          <h3>Riport videó</h3>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="service-section" id="serviceSection">
+
+      <div class="section-header">
+        <h1 class="service-title">Szolgáltatások</h1>
+      </div>
+
+
+      <div class="service-container">
+
+        <div class="service-card" data-aos="flip-left">
+          <div class="s-card topS-card">
+            <i class="fas fa-video service-icon"></i>
+            <h1>4K</h1>
+            <span class="serviceBorder1"></span>
+            <span class="serviceBorder2"></span>
+            <span class="serviceBorder3"></span>
+            <span class="serviceBorder4"></span>
+          </div>
+          <div class="s-card bottomS-card">
+            <h5>Felvételeink Full HD és 4K minőségben készülnek.</h5>
+            <span class="serviceBorder3"></span>
+            <span class="serviceBorder4"></span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="flip-up">
+          <div class="s-card topS-card">
+            <i class="fas fa-lightbulb service-icon"></i>
+            <h1>Szervezés</h1>
+            <span class="serviceBorder1"></span>
+            <span class="serviceBorder2"></span>
+            <span class="serviceBorder3"></span>
+            <span class="serviceBorder4"></span>
+          </div>
+          <div class="s-card bottomS-card">
+            <h5>Koncepció kitalálása, forgatókönyv kidolgozása, 
+              statiszták, mellékszereplők szervezése, eszközök beszerzése, 
+              engedélyek beszerzése, helyszínek leszervezése</h5>
+              <span class="serviceBorder3"></span>
+              <span class="serviceBorder4"></span>
+          </div>
+        </div>
+
+        <div class="service-card" data-aos="flip-right">
+          <div class="s-card topS-card">
+            <i class="fas fa-camera service-icon"></i>
+            <h1>Megvalósítás</h1>
+            <span class="serviceBorder1"></span>
+            <span class="serviceBorder2"></span>
+            <span class="serviceBorder3"></span>
+            <span class="serviceBorder4"></span>
+          </div>
+          <div class="s-card bottomS-card">
+            <h5>Forgatás, vágás, feliratozás, utómunka, korrekciós feladatok, hang utómunka.</h5>
+            <span class="serviceBorder3"></span>
+            <span class="serviceBorder4"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="team-section" id="teamSection">
+
+      <div class="section-header">
+        <h1 class="service-title">A Csapat</h1>
+        <h5>Egy csapat számtalan megoldással.</h5>
+      </div>
+
+      <div class="team-container">
+        <div class="team-card" data-aos="fade-right">
+          <img src="./imgs/man.jpg" alt="">
+          <div class="person-info">
+            <h2>John Doe</h2>
+            <h4>jr. coffee maker</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit.</h5>
+          </div>
+          <span class="cardCircle-left"></span>
+          <span class="cardCircle-right"></span>
+        </div>
+        <div class="team-card" data-aos="fade-right">
+          <img src="./imgs/man.jpg" alt="">
+          <div class="person-info">
+            <h2>John Doe</h2>
+            <h4>jr. coffee maker</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit.</h5>
+          </div>
+          <span class="cardCircle-left"></span>
+          <span class="cardCircle-right"></span>
+        </div>
+        <div class="team-card" data-aos="fade-left">
+          <img src="./imgs/man.jpg" alt="">
+          <div class="person-info">
+            <h2>John Doe</h2>
+            <h4>jr. coffee maker</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit.</h5>
+          </div>
+          <span class="cardCircle-left"></span>
+          <span class="cardCircle-right"></span>
+        </div>
+        <div class="team-card" data-aos="fade-left">
+          <img src="./imgs/man.jpg" alt="">
+          <div class="person-info">
+            <h2>John Doe</h2>
+            <h4>jr. coffee maker</h4>
+            <h5>Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit.</h5>
+          </div>
+          <span class="cardCircle-left"></span>
+          <span class="cardCircle-right"></span>
+        </div>
+       
+      </div>
+
+    </section>
+
+    <section class="cantact-section" id="contactSection">
+      <div class="section-header">
+        <h1 class="service-title">Elérhetőség</h1>
+      </div>
+
+      <div class="contact-container">
+        <a href="mailto:info@stabofficial.hu" class="contact-card" data-aos="fade-right">
+          <div>
+            <i class="fas fa-envelope contact-icons"></i>
+            <h3>info@stabofficial.hu</h3>
+          </div>
+        </a>
+        <a target="blank" href="https://www.youtube.com/channel/UCgUxkdCYP7b57y7VnZHra-w" class="contact-card" data-aos="fade-right">
+          <div>
+            <i class="fab fa-youtube contact-icons"></i>
+            <h3>Youtube csatornánk</h3>
+          </div>
+        </a>
+        <a target="blank" href="https://www.instagram.com/stab_official_/" class="contact-card" data-aos="fade-left">
+          <div>
+            <i class="fab fa-instagram-square contact-icons"></i>
+            <h3>Instagram oldalunk</h3>
+          </div>
+        </a>
+        <a href="#" class="contact-card" data-aos="fade-left">
+          <div>
+            <i class="fas fa-mobile-alt contact-icons"></i>
+            <h3>+36209685292</h3>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="contact-info">
+        <i class="fas fa-exclamation"></i>
+        <h6>
+          Kérjük, vedd figyelembe, hogy az ár az igények függvénye. 
+          Mivel minden megrendelés más, ezért egyedi árajánlatot készítünk számodra, 
+          ami nem kerül külön költségbe, de ami fontos, hivatásunk, 
+          hogy mindenkinek elérhető áron nyújtsuk szolgáltatásainkat.
+        </h6>
+      </div>  
+
+    </section>
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./js/navAnimation.js"></script>
+    <script src="./js/typeWriter.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

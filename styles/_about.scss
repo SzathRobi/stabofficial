@@ -1,0 +1,117 @@
+@import './variables';
+
+.about{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.about-grid{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(9, 1fr);
+    max-width: 90%;
+    height: 86%;
+    margin: 0 auto;
+    grid-gap: 1.3rem;
+    grid-template-areas: 
+    "ad"
+    "music"
+    "video"
+    "occassion"
+    "photo"
+    "company"
+    "portre"
+    "doku"
+    "riport";
+
+    .about-icon{
+        color: $color3;
+        font-size: 2.5rem;
+        padding-bottom: 0.5rem;
+        transition: 300ms;
+    }    
+}
+.grid-item{
+   @include flexCenter(column);
+   background: $color1;
+   border-radius: 14px;
+   padding: 1rem;
+   box-shadow:  4px 4px 20px #000,
+                -2px -2px 8px #535353;
+    transition: 300ms;
+
+   h3{
+       color: $color-light;
+       text-align: center;
+   }
+
+   &:nth-child(1){
+       grid-area: ad;
+   }
+   &:nth-child(2){
+       grid-area: music;
+   }
+   &:nth-child(3){
+       grid-area: occassion;
+   }
+   &:nth-child(4){
+       grid-area: company;
+   }
+   &:nth-child(5){
+       grid-area: video;
+   }
+   &:nth-child(6){
+       grid-area: photo;
+   }
+   &:nth-child(7){
+       grid-area: doku;
+   }
+   &:nth-child(8){
+       grid-area: portre;
+   }
+   &:nth-child(9){
+       grid-area: riport;
+   }
+}
+
+
+@media (min-width: 768px){
+    .about-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "ad music music"
+        "ad company photo"
+        "video video photo"
+        "portre occassion occassion"
+        "riport riport doku";
+        
+    }
+}
+
+@media (min-width: 1024px){
+    .about-grid{
+        height: 86vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "ad ad music music occassion occassion"
+        "ad ad company photo doku portre"
+        "video video video photo riport riport";
+    }
+
+  /*  .grid-item{
+        &:hover{
+            transform: scale(1.2);
+            background: $color3;
+            box-shadow: 0 0 10px $color3;
+        }
+    
+        &:hover .about-icon{
+            color: $color-light;
+        }
+    }*/
+}

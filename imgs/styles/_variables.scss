@@ -1,0 +1,11 @@
+$color1: #111;
+$color2: #222;
+$color3: #FF1493;
+$color-light: #f4f4f4;
+
+@mixin flexCenter($dir){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-items: center;
+}
